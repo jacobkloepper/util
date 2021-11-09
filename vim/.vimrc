@@ -12,3 +12,7 @@ set title
 set backspace=indent,eol,start
 set confirm
 set history=50
+map <C-k> :tabr<cr>
+map <C-j> :tabl<cr>
+map <C-h> :tabp<cr>
+map <C-l> :tabn<cr>
