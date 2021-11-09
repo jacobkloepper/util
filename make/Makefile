@@ -8,7 +8,7 @@ BUILD_DIR = $(TARGET_DIR)/build
 INCLUDE_DIR = inc
 SCRIPT_DIR = tool
 
-TARGET = $(TARGET_DIR)/!!!BINARY-NAME!!!
+TARGET = $(TARGET_DIR)/progname
 SOURCES = $(wildcard $(SOURCE_DIR)/*.c) 
 OBJECTS = $(subst $(SOURCE_DIR),$(BUILD_DIR),$(SOURCES:.c=.o))
 HEADERS = $(wildcard $(INCLUDE_DIR)/*.h)
