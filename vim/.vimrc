@@ -5,6 +5,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'ycm-core/YouCompleteMe'
 Plugin 'preservim/nerdtree'
 
 call vundle#end()
