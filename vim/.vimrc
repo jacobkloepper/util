@@ -5,7 +5,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'ycm-core/YouCompleteMe'
+Plugin 'preservim/nerdtree'
 
 call vundle#end()
 filetype plugin indent on
@@ -28,9 +28,16 @@ set history=50
 colorscheme elflord
 
 " binds
-map <C-k> :tabr<cr>
-map <C-j> :tabl<cr>
-map <C-h> :tabp<cr>
-map <C-l> :tabn<cr>
-map <F5> :w<cr>:!make<cr>
-map <F6> :w<cr>:!cargo run<cr>
+
+" Tab control
+noremap <C-k> :tabr<cr>
+noremap <C-j> :tabl<cr>
+noremap <C-h> :tabp<cr>
+noremap <C-l> :tabn<cr>
+
+" Compile/run
+noremap <F5> :w<cr>:!make<cr>
+noremap <F6> :w<cr>:!cargo run<cr>
+
+" NERDTree
+noremap <C-n> :NERDTreeToggle<cr>
