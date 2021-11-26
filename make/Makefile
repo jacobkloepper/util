@@ -22,7 +22,7 @@ $(TARGET): $(OBJECTS)
 	@$(CC) $(LD_FLAGS) $(OBJECTS) -o $(TARGET)
 
 $(BUILD_DIR)/%.o: $(SOURCE_DIR)/%.c $(HEADERS)
-	@echo Buliding $@
+	@echo Building $@
 	@$(CC) -c $(CC_FLAGS) -o $@ $<
 
 makedirs:
