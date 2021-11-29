@@ -1,0 +1,2 @@
+In reality, substitute all strings that start with ESC[ and end in m with an empty string
+:%s/^[\[[^m]*m//g
