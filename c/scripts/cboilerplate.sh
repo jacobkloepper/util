@@ -3,7 +3,7 @@
 # make directories
 mkdir src inc bin bin/build doc scripts
 
-# make files
+# make files (including makefile!)
 touch src/main.c inc/common.h doc/readme.txt scripts/setup.sh Makefile
 
 # populate main.c
