@@ -5,7 +5,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'ycm-core/YouCompleteMe'
+" Plugin 'ycm-core/YouCompleteMe'
 Plugin 'preservim/nerdtree'
 
 call vundle#end()
@@ -29,6 +29,12 @@ set history=50
 colorscheme elflord
 
 " binds
+
+" Commands
+:command WQ wq
+:command Wq wq
+:command W w
+:command Q q
 
 " Tab control
 noremap <C-k> :tabr<cr>
