@@ -35,6 +35,8 @@ colorscheme elflord
 :command Wq wq
 :command W w
 :command Q q
+:command Qall qall
+:command Wqall wqall
 
 " Tab control
 noremap <C-k> :tabr<cr>
