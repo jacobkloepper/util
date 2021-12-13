@@ -5,8 +5,9 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
-" Plugin 'ycm-core/YouCompleteMe'
+Plugin 'ycm-core/YouCompleteMe'
 Plugin 'preservim/nerdtree'
+Plugin 'rdnetto/YCM-Generator'
 
 call vundle#end()
 filetype plugin indent on
@@ -33,7 +34,6 @@ colorscheme elflord
 " Commands
 :command WQ wq
 :command Wq wq
-:command W w
 :command Q q
 :command Qall qall
 :command Wqall wqall
@@ -50,3 +50,7 @@ noremap <F6> :w<cr>:!cargo run<cr>
 
 " NERDTree
 noremap <C-n> :NERDTreeToggle<cr>
+
+" ycm stuff
+let g:ycm_confirm_extra_conf = 0
+let g:ycm_extra_conf_globlist = ['/home/kloep/source/repos/*/']
