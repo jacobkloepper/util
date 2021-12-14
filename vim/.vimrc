@@ -24,6 +24,7 @@ set tabstop=4
 set hlsearch
 set ruler
 set title
+set belloff=all
 set backspace=indent,eol,start
 set confirm
 set history=50
