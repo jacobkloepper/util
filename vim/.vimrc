@@ -1,11 +1,12 @@
 set nocompatible
 filetype off
 
+
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'ycm-core/YouCompleteMe'
+"Plugin 'ycm-core/YouCompleteMe'
 Plugin 'preservim/nerdtree'
 Plugin 'rdnetto/YCM-Generator'
 
@@ -13,7 +14,6 @@ call vundle#end()
 filetype plugin indent on
 
 " general settings
-syntax on
 set number
 set autoindent
 set expandtab
@@ -21,13 +21,21 @@ set shiftround
 set shiftwidth=4
 set smarttab
 set tabstop=4
-set hlsearch
 set ruler
 set title
 set belloff=all
 set backspace=indent,eol,start
 set confirm
 set history=50
+set scrolloff=2
+set showmatch
+set hidden
+
+if &t_Co > 2 || has("gui_running")
+    syntax on
+    set hlsearch
+    set incsearch
+endif
 colorscheme elflord
 
 " binds
