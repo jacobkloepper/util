@@ -30,6 +30,7 @@ set history=50
 set scrolloff=2
 set showmatch
 set hidden
+set relativenumber
 
 if &t_Co > 2 || has("gui_running")
     syntax on
